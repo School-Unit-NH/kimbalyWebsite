@@ -1,0 +1,176 @@
+/* Kimberly Primary School – Theme (Bootstrap 4 override) */
+:root{
+    /* --kim-primary:#1D4ED8; */
+    --kim-primary:#140E08;
+    --kim-primary-dark:#163FB1;
+    --kim-secondary:#F59E0B;
+    --kim-secondary-dark:#D48806;
+    --kim-dark:#0B1220;
+    --kim-light:#F5F9FF;
+    --kim-primary-rgb: 20, 14, 8;
+    --kim-overlay-opacity: 0.9;
+}
+
+
+/* =========================================
+    Core utilities
+========================================= */
+.text-primary{color:var(--kim-primary)!important;}
+.text-secondary{color:var(--kim-secondary)!important;}
+
+.bg-primary{background-color:var(--kim-primary)!important;}
+.bg-secondary{background-color:var(--kim-secondary)!important;}
+.bg-dark{background-color:var(--kim-dark)!important;}
+.bg-light{background-color:var(--kim-light)!important;}
+
+/* =========================================
+    Buttons (solid)
+========================================= */
+.btn-primary{
+background-color:var(--kim-primary)!important;
+border-color:var(--kim-primary)!important;
+color:#fff!important;
+}
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active{
+background-color:var(--kim-primary-dark)!important;
+border-color:var(--kim-primary-dark)!important;
+}
+
+.btn-secondary{
+background-color:var(--kim-secondary)!important;
+border-color:var(--kim-secondary)!important;
+color:#fff!important;
+}
+.btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active{
+background-color:var(--kim-secondary-dark)!important;
+border-color:var(--kim-secondary-dark)!important;
+}
+
+/* =========================================
+    Outline buttons (you use these)
+========================================= */
+.btn-outline-primary{
+color:var(--kim-primary)!important;
+border-color:var(--kim-primary)!important;
+}
+.btn-outline-primary:hover,.btn-outline-primary:focus,.btn-outline-primary:active{
+background-color:var(--kim-primary)!important;
+border-color:var(--kim-primary)!important;
+color:#fff!important;
+}
+
+/* Your header uses .btn-outline-light */
+.btn-outline-light:hover,.btn-outline-light:focus,.btn-outline-light:active{
+color:var(--kim-dark)!important;
+background-color:#fff!important;
+border-color:#fff!important;
+}
+
+/* =========================================
+    Navbar links (active + hover)
+========================================= */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover{
+color:var(--kim-primary)!important;
+}
+
+/* Dropdown active item */
+.dropdown-item.active,
+.dropdown-item:active{
+background-color:var(--kim-primary)!important;
+color:#fff!important;
+}
+
+/* =========================================
+    Forms focus color
+========================================= */
+.form-control:focus,
+.custom-select:focus{
+border-color:var(--kim-primary)!important;
+box-shadow:0 0 0 .2rem rgba(29,78,216,.20)!important;
+}
+
+/* =========================================
+    Optional: links & icons that should match brand
+========================================= */
+a{color:var(--kim-primary);}
+a:hover{color:var(--kim-primary-dark);}
+
+/* =========================================
+    Template-specific helpers
+    (often used for circular icon backgrounds)
+========================================= */
+.btn-icon.bg-primary{background-color:var(--kim-primary)!important;}
+.btn-icon.bg-secondary{background-color:var(--kim-secondary)!important;}
+
+.owl-next{background-color:var(--kim-primary)!important;}
+
+.team-carousel .owl-nav .owl-prev{background-color:var(--kim-primary)!important;}
+  
+.jumbotron {
+    background-image:
+        linear-gradient(
+            rgba(var(--kim-primary-rgb), var(--kim-overlay-opacity)),
+            rgba(var(--kim-primary-rgb), var(--kim-overlay-opacity))
+        ),
+        url(../img/main/IMG_5219.JPG);
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+}
+
+.jumbotron.page-header {
+    background:
+        linear-gradient(
+            rgba(var(--kim-primary-rgb), var(--kim-overlay-opacity)),
+            rgba(var(--kim-primary-rgb), var(--kim-overlay-opacity))
+        ),
+        url(../img/page-header.jpg);
+        /* , no-repeat center center; */
+        background-size: cover;
+}
+  
+
+/* ABOUT PAGE ONLY */
+.page-about .section-title h1.display-4 {
+    letter-spacing: -0.5px;
+  }
+  
+  .page-about .about-lead {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .page-about .about-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    border: 1px solid rgba(0,0,0,.06);
+  }
+  
+  .page-about .about-card .badge-pill {
+    font-weight: 600;
+    padding: .55rem .9rem;
+  }
+  
+  /* Make counters feel more premium on About */
+  .page-about .counter-strip > div > div {
+    border-radius: 0;
+  }
+  .page-about .counter-strip > div:first-child > div { border-top-left-radius: 14px; border-bottom-left-radius: 14px; }
+  .page-about .counter-strip > div:last-child  > div { border-top-right-radius: 14px; border-bottom-right-radius: 14px; }
+  
+  /* Optional: add subtle left accent line to section title */
+  .page-about .section-title.position-relative::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 90px;
+    height: 3px;
+    background: rgba(40,120,235,.35);
+    border-radius: 99px;
+  }
+  
