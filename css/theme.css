@@ -174,3 +174,10 @@ a:hover{color:var(--kim-primary-dark);}
     border-radius: 99px;
   }
   
+.img-fluid-1 {
+    max-width: 100%;
+    width: 300px;
+    height: 300px; 
+    object-fit: cover;
+    /* object-position: top; */
+}

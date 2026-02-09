@@ -389,6 +389,161 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="js/courses-data.js"></script>
+    <script>
+        (function () {
+            const imagePool = [
+                "img/courses-1.jpg",
+                "img/courses-2.jpg",
+                "img/courses-3.jpg",
+                "img/courses-4.jpg",
+                "img/courses-5.jpg",
+                "img/courses-6.jpg"
+            ];
+
+            function flattenCourses() {
+                const all = [];
+                coursesData.departments.forEach(dept => {
+                    dept.items.forEach(item => {
+                        all.push({
+                            department: dept,
+                            item
+                        });
+                    });
+                });
+                return all;
+            }
+
+            function getCourseById(courseId) {
+                const all = flattenCourses();
+                return all.find(c => c.item.id === courseId) || all[0];
+            }
+
+            function toTitleCase(text) {
+                return text.replace(/\b\w/g, c => c.toUpperCase());
+            }
+
+            const params = new URLSearchParams(window.location.search);
+            const courseId = params.get("course");
+            const selected = getCourseById(courseId);
+            const course = selected.item;
+            const dept = selected.department;
+            const allCourses = flattenCourses();
+            const courseIndex = allCourses.findIndex(c => c.item.id === course.id);
+            const imageSrc = imagePool[(courseIndex >= 0 ? courseIndex : 0) % imagePool.length];
+
+            document.title = `${course.title} - Kimberly`;
+
+            const heroTitle = document.querySelector(".page-header h1");
+            if (heroTitle) heroTitle.textContent = course.title;
+
+            const breadcrumb = document.querySelector(".page-header .d-inline-flex p.m-0.text-uppercase:last-child");
+            if (breadcrumb) breadcrumb.textContent = course.title;
+
+            const sectionTitle = document.querySelector(".section-title h1");
+            if (sectionTitle) sectionTitle.textContent = course.title;
+
+            const mainImage = document.querySelector(".col-lg-8 .mb-5 img");
+            if (mainImage) mainImage.setAttribute("src", imageSrc);
+
+            const paragraphs = document.querySelectorAll(".col-lg-8 .mb-5 p");
+            const summary = course.detail;
+            const longOne = `${course.title} is part of the ${dept.title}. ${summary} This course strengthens key skills through guided practice, engaging activities, and age-appropriate projects.`;
+            const longTwo = `Learners develop confidence, discipline, and curiosity while building steady progress. Lessons combine explanation, practice tasks, and regular feedback so every learner can grow at a comfortable pace.`;
+            if (paragraphs[0]) paragraphs[0].textContent = longOne;
+            if (paragraphs[1]) paragraphs[1].textContent = longTwo;
+
+            const featureBox = document.querySelector(".bg-primary");
+            if (featureBox) {
+                const level = dept.id === "nursery" ? "Early Years" : (dept.id === "elementary" ? "Foundation" : "Upper Primary");
+                const duration = dept.id === "primary" ? "Full Academic Year" : "Termly Focus";
+                const language = dept.id === "nursery" ? "English (with local support)" : "English";
+                const classSize = dept.id === "nursery" ? "Small groups" : "Moderate groups";
+                featureBox.innerHTML = `
+                    <h3 class="text-white py-3 px-4 m-0">Course Features</h3>
+                    <div class="d-flex justify-content-between border-bottom px-4">
+                        <h6 class="text-white my-3">Department</h6>
+                        <h6 class="text-white my-3">${dept.title}</h6>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom px-4">
+                        <h6 class="text-white my-3">Course Type</h6>
+                        <h6 class="text-white my-3">${dept.type}</h6>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom px-4">
+                        <h6 class="text-white my-3">Level</h6>
+                        <h6 class="text-white my-3">${level}</h6>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom px-4">
+                        <h6 class="text-white my-3">Duration</h6>
+                        <h6 class="text-white my-3">${duration}</h6>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom px-4">
+                        <h6 class="text-white my-3">Language</h6>
+                        <h6 class="text-white my-3">${language}</h6>
+                    </div>
+                    <div class="d-flex justify-content-between px-4">
+                        <h6 class="text-white my-3">Class Size</h6>
+                        <h6 class="text-white my-3">${classSize}</h6>
+                    </div>
+                    <h5 class="text-white py-3 px-4 m-0">Learning Focus: ${toTitleCase(course.title)}</h5>
+                    <div class="py-3 px-4">
+                        <a class="btn btn-block btn-secondary py-3 px-5" href="contact.html">Enroll Now</a>
+                    </div>
+                `;
+            }
+
+            const related = document.querySelector(".related-carousel");
+            if (related) {
+                const relatedItems = dept.items.filter(i => i.id !== course.id).slice(0, 6);
+                related.innerHTML = relatedItems.map((item, i) => `
+                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="detail.html?course=${item.id}">
+                        <img class="img-fluid" src="${imagePool[i % imagePool.length]}" alt="">
+                        <div class="courses-text">
+                            <h4 class="text-center text-white px-3">${item.title}</h4>
+                            <div class="border-top w-100 mt-3">
+                                <div class="d-flex justify-content-between p-4">
+                                    <span class="text-white"><i class="fa fa-book mr-2"></i>${dept.type}</span>
+                                    <span class="text-white"><i class="fa fa-info-circle mr-2"></i>${item.detail}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                `).join("");
+            }
+
+            const categories = document.querySelector(".list-group");
+            if (categories) {
+                categories.innerHTML = coursesData.departments.map(d => `
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        <a href="course.html#${d.id}" class="text-decoration-none h6 m-0">${d.title}</a>
+                        <span class="badge badge-primary badge-pill">${d.items.length}</span>
+                    </li>
+                `).join("");
+            }
+
+            const recentContainer = document.querySelector(".mb-5 h2.mb-4");
+            if (recentContainer) {
+                const wrapper = recentContainer.parentElement;
+                const recentItems = allCourses.slice(0, 4);
+                wrapper.innerHTML = `
+                    <h2 class="mb-4">Recent Courses</h2>
+                    ${recentItems.map((c, i) => `
+                        <a class="d-flex align-items-center text-decoration-none mb-4" href="detail.html?course=${c.item.id}">
+                            <img class="img-fluid rounded" src="img/courses-80x80.jpg" alt="">
+                            <div class="pl-3">
+                                <h6>${c.item.title}</h6>
+                                <div class="d-flex">
+                                    <small class="text-body mr-3"><i class="fa fa-book text-primary mr-2"></i>${c.department.title}</small>
+                                    <small class="text-body"><i class="fa fa-info-circle text-primary mr-2"></i>${c.item.detail}</small>
+                                </div>
+                            </div>
+                        </a>
+                    `).join("")}
+                `;
+            }
+        })();
+    </script>
 </body>
 
 
