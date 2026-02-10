@@ -6,3 +6,6 @@ Targets..
 4. ADDING OF PICTURES WHERE NECESSARY
 
 # merge almni page and gallary?
+
+are we making a gallery for them;
+

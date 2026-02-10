@@ -18,10 +18,11 @@
 
     function encodeMessage(data) {
         const lines = [
-            `Name: ${data.name}`,
-            `Email: ${data.email}`,
+            `Hi, my name is ${data.name}.`,
             `Subject: ${data.subject}`,
-            `Message: ${data.message}`
+            `Message: ${data.message}`,
+            '',
+            'Can I know more?'
         ];
         return encodeURIComponent(lines.join("\n"));
     }
@@ -42,7 +43,7 @@
         }
         const subject = encodeURIComponent(data.subject || "Contact Form Message");
         const body = encodeURIComponent(
-            `Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`
+            `Name: ${data.name}\n\n${data.message}`
         );
         window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
         return true;
@@ -53,12 +54,11 @@
 
         const data = {
             name: form.elements.name ? form.elements.name.value.trim() : "",
-            email: form.elements.email ? form.elements.email.value.trim() : "",
             subject: form.elements.subject ? form.elements.subject.value.trim() : "",
             message: form.elements.message ? form.elements.message.value.trim() : ""
         };
 
-        if (!data.name || !data.email || !data.subject || !data.message) {
+        if (!data.name || !data.subject || !data.message) {
             setStatus("Please fill in all fields before sending.", true);
             return;
         }
@@ -67,14 +67,12 @@
         const whatsapp = form.getAttribute("data-whatsapp");
         const email = form.getAttribute("data-email");
 
-        console.log(whatsapp, email, message)
-
         if (submitBtn) {
             submitBtn.disabled = true;
         }
 
         const sent =
-            // openWhatsApp(whatsapp, message) ||
+            openWhatsApp(whatsapp, message) ||
             openMailto(email, data);
 
         if (sent) {
