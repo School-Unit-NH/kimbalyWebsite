@@ -1,14 +1,14 @@
 /* Kimberly Primary School – Theme (Bootstrap 4 override) */
 :root{
-    /* --kim-primary:#1D4ED8; */
-    --kim-primary:#140E08;
+    /* --kim-primary:#1D4ED8;  140E08*/
+    --kim-primary:#1D4ED8;
     --kim-primary-dark:#163FB1;
     --kim-secondary:#F59E0B;
     --kim-secondary-dark:#D48806;
     --kim-dark:#0B1220;
-    --kim-light:#F5F9FF;
-    --kim-primary-rgb: 20, 14, 8;
-    --kim-overlay-opacity: 0.9;
+    --kim-light:#dde5f0; /*#cbd6e7*/
+    --kim-primary-rgb: 216, 138, 29; /*20, 14, 8; 29, 78, 216;*/
+    --kim-overlay-opacity: 0.7;
 }
 
 
@@ -191,18 +191,212 @@ a:hover{color:var(--kim-primary-dark);}
 }
 
 .team-card{
-    width: 400px;              /* consistent card width */
-    border-radius: 10px;
-    overflow: hidden;          /* clips image nicely */
+    width: 320px;
     margin-left: 5px;
     margin-right: 5px;
-  }
-  
-  .team-img{
+}
+
+.team-img{
     width: 100%;
-    height: 400px;             /* consistent image height */
+    height: 320px;
     object-fit: cover;
     object-position: top;
     display: block;
-  }
+}
+
+.team-card-modern{
+    background: #fff;
+    border: 1px solid rgba(20, 14, 8, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 28px rgba(11, 18, 32, 0.10);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.team-card-modern:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 20px 38px rgba(11, 18, 32, 0.18);
+}
+
+.team-image-wrap{
+    position: relative;
+}
+
+.team-image-wrap::after{
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 90px;
+    background: linear-gradient(0deg, rgba(20, 14, 8, 0.35) 0%, rgba(20, 14, 8, 0) 100%);
+}
+
+.team-body{
+    background: linear-gradient(180deg, #ffffff 0%, #f8faff 100%);
+}
+
+.team-name{
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: #0b1220;
+}
+
+.team-role{
+    color: #5a6472;
+    font-weight: 600;
+}
+
+.team-social-link{
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1px solid rgba(20, 14, 8, 0.12);
+    color: var(--kim-primary);
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+.team-social-link:hover{
+    color: #fff;
+    background: var(--kim-primary);
+    border-color: var(--kim-primary);
+    text-decoration: none;
+}
+
+@media (max-width: 767.98px){
+    .team-card{
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* =========================================
+   Programs (Index)
+========================================= */
+.program-card{
+    background: #fff;
+    border: 1px solid rgba(20, 14, 8, 0.08);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 26px rgba(11, 18, 32, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.program-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(11, 18, 32, 0.14);
+}
+
+.program-card-image{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.program-card-body{
+    padding: 1.25rem;
+}
+
+.program-badge{
+    display: inline-block;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    color: var(--kim-primary);
+    background: rgba(20, 14, 8, 0.08);
+    border-radius: 999px;
+    padding: 0.35rem 0.7rem;
+    margin-bottom: 0.75rem;
+}
+
+.program-title{
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #0b1220;
+    margin-bottom: 0.6rem;
+}
+
+.program-text{
+    color: #5a6472;
+    line-height: 1.6;
+    margin-bottom: 0.9rem;
+}
+
+.program-meta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.92rem;
+    color: #3f4a5a;
+    border-top: 1px solid rgba(20, 14, 8, 0.08);
+    padding-top: 0.75rem;
+}
+
+/* =========================================
+   Rounded Design System
+========================================= */
+:root{
+  --kim-radius-sm: 10px;
+  --kim-radius-md: 14px;
+  --kim-radius-lg: 20px;
+  --kim-radius-pill: 999px;
+}
+
+.navbar{
+  border-radius: 0 0 var(--kim-radius-md) var(--kim-radius-md);
+}
+
+.navbar .dropdown-menu{
+  border-radius: var(--kim-radius-md);
+  overflow: hidden;
+}
+
+.btn{
+  border-radius: var(--kim-radius-pill) !important;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square{
+  border-radius: var(--kim-radius-sm) !important;
+}
+
+.form-control,
+.custom-select,
+textarea.form-control{
+  border-radius: var(--kim-radius-sm) !important;
+}
+
+.courses-item,
+.courses-list-item,
+.team-item,
+.team-card,
+.testimonial-item,
+.about-card,
+.card,
+.bg-light{
+  border-radius: var(--kim-radius-md);
+  overflow: hidden;
+}
+
+.courses-item img,
+.courses-list-item img,
+.team-img,
+.card img{
+  border-radius: var(--kim-radius-md);
+}
+
+.jumbotron,
+.jumbotron.page-header{
+  border-bottom-left-radius: var(--kim-radius-lg);
+  border-bottom-right-radius: var(--kim-radius-lg);
+  overflow: hidden;
+}
   
