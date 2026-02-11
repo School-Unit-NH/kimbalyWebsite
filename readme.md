@@ -9,3 +9,8 @@ Targets..
 
 are we making a gallery for them;
 
+admission are open section format and send a messsage o whats app or email?
+whatsapp, email
+
+
+enroll now -> result

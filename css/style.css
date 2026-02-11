@@ -9797,12 +9797,12 @@ h6,
 }
 
 .jumbotron {
-  background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/header.jpg), no-repeat center center;
+  background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/site-section-bg.webp), no-repeat center center;
   background-size: cover;
 }
 
 .jumbotron.page-header {
-  background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/page-header.jpg), no-repeat center center;
+  background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/site-section-bg.webp), no-repeat center center;
   background-size: cover;
 }
 
@@ -9818,18 +9818,18 @@ h6,
 
 .overlay-top::before {
   top: 0;
-  background: url(../img/overlay-top.png) top center no-repeat;
+  background: url(../img/overlay-top.webp) top center no-repeat;
   background-size: contain;
 }
 
 .overlay-bottom::after {
   bottom: 0;
-  background: url(../img/overlay-bottom.png) bottom center no-repeat;
+  background: url(../img/overlay-bottom.webp) bottom center no-repeat;
   background-size: contain;
 }
 
 .bg-image {
-  background: linear-gradient(rgba(40, 120, 235, 0.05), rgba(40, 120, 235, 0.05)), url(../img/bg-image.jpg);
+  background: linear-gradient(rgba(40, 120, 235, 0.05), rgba(40, 120, 235, 0.05)), url(../img/site-section-bg.webp);
   background-attachment: fixed;
 }
 
@@ -9958,3 +9958,4 @@ h6,
 .testimonial-carousel .owl-nav .owl-prev:hover {
   background: #2878EB;
 }
+

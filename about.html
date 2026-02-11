@@ -20,7 +20,6 @@
     <link href="external/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -30,23 +29,37 @@
 <body class="page-about">
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark">
-        <div class="row py-2 px-lg-5">
-            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+234 708 140 9911</small>
-                    <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>Kimberlyscastle@yahoo.com</small>
-                </div>
+        <div class="row py-1 px-2 px-lg-5">
+        <div class="col-12">
+            <div class="d-flex align-items-center justify-content-between text-white flex-nowrap overflow-auto">
+    
+            <!-- Left: Contact -->
+            <div class="d-flex align-items-center flex-nowrap">
+                <small class="d-flex align-items-center me-3">
+                    <i class="fa fa-phone-alt me-1"></i>
+                    <a href="tel:+2347081409911" class="text-white text-decoration-none">
+                        +234 708 140 9911
+                    </a>
+                </small>
+                <small class="px-3">|</small>
+                <small class="d-flex align-items-center">
+                    <i class="fa fa-envelope me-1"></i>
+                    <a href="mailto:Kimberlyscastle@yahoo.com"
+                        class="text-white text-decoration-none text-truncate"
+                        style="max-width: 200px;">
+                        <span class="d-none d-sm-inline" style="margin: 2px;">Kimberlyscastle@yahoo.com</span>
+                    </a>
+                </small>
             </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="text-white px-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="text-white px-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="text-white px-2" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="text-white pl-2" href="#"><i class="fab fa-youtube"></i></a>
+    
+            <!-- Right: Social -->
+            <div class="d-flex align-items-center flex-nowrap ms-3">
+                <a class="text-white px-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="text-white px-1" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
+    
             </div>
+        </div>
         </div>
     </div>
     <!-- Topbar End -->
@@ -55,7 +68,10 @@
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
             <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>Kimberly</h1>
+                <h1 class="m-0 text-uppercase text-primary d-flex align-items-center">
+                    <img loading="lazy" decoding="async"  src="img/main/logo-kimberly.webp" alt="" style="width: 30px; height: 30px; margin-right: 2px;" class="me-2">
+                    Kimberly
+                </h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -66,15 +82,15 @@
                     <a href="about.html" class="nav-item nav-link active">About</a>
                     <a href="course.html" class="nav-item nav-link">Programs</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Members</a>
                         <div class="dropdown-menu m-0">
                             <a href="team.html" class="dropdown-item">Instructors</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <!-- <a href="testimonial.html" class="dropdown-item">Testimonial</a> -->
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="#" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+                <a href="#" class="btn btn-primary py-2 px-4 d-none d-lg-block">Student Portal</a>
             </div>
         </nav>
     </div>
@@ -90,23 +106,6 @@
                 <i class="fa fa-angle-double-right pt-1 px-3"></i>
                 <p class="m-0 text-uppercase">About</p>
             </div>
-            <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Courses</button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Courses 1</a>
-                            <a class="dropdown-item" href="#">Courses 2</a>
-                            <a class="dropdown-item" href="#">Courses 3</a>
-                        </div>
-                    </div>
-                    <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary px-4 px-lg-5">Search</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- Header End -->
@@ -118,7 +117,7 @@
       <div class="row">
         <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
           <div class="position-relative h-100">
-            <img class="position-absolute w-100 h-100" src="img/main/IMG_5210.JPG" style="object-fit: cover;" alt="Kimberly Castle School Lagos">
+            <img loading="lazy" decoding="async" class="position-absolute w-100 h-100" src="img/main/about-hero.webp" style="object-fit: cover;" alt="Kimberly Castle School Lagos">
           </div>
         </div>
   
@@ -313,7 +312,7 @@
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/main/IMG_4998.JPG" style="object-fit: cover;" alt="School classroom and learning">
+                        <img loading="lazy" decoding="async" class="position-absolute w-100 h-100" src="img/main/about-learning.webp" style="object-fit: cover;" alt="School classroom and learning">
                     </div>
                 </div>
             </div>
@@ -423,9 +422,7 @@
                     <p><i class="fa fa-phone-alt mr-2"></i>+2347081409911</p>
                     <p><i class="fa fa-envelope mr-2"></i>Kimberlyscastle@yahoo.com</p>
                     <div class="d-flex justify-content-start mt-4">
-                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
                         <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
-                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
                         <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
                     </div>
                 </div>
@@ -469,16 +466,15 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="external/code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="external/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="external/code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="external/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" defer></script>
+    <script src="lib/easing/easing.min.js" defer></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 
 </html>
+
+

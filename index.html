@@ -11,6 +11,7 @@
 
     <!-- Favicon -->
     <link href="img/favicon.html" rel="icon">
+    <link rel="icon" type="image/webp" href="img/main/logo-kimberly.webp" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
@@ -30,33 +31,49 @@
 <body>
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark">
-        <div class="row py-2 px-lg-5">
-            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+234 708 140 9911</small>
-                    <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>Kimberlyscastle@yahoo.com</small>
-                </div>
+        <div class="row py-1 px-2 px-lg-5">
+        <div class="col-12">
+            <div class="d-flex align-items-center justify-content-between text-white flex-nowrap overflow-auto">
+    
+            <!-- Left: Contact -->
+            <div class="d-flex align-items-center flex-nowrap">
+                <small class="d-flex align-items-center me-3">
+                    <i class="fa fa-phone-alt me-1"></i>
+                    <a href="tel:+2347081409911" class="text-white text-decoration-none">
+                        +234 708 140 9911
+                    </a>
+                </small>
+                <small class="px-3">|</small>
+                <small class="d-flex align-items-center">
+                    <i class="fa fa-envelope me-1"></i>
+                    <a href="mailto:Kimberlyscastle@yahoo.com"
+                        class="text-white text-decoration-none text-truncate"
+                        style="max-width: 200px;">
+                        <span class="d-none d-sm-inline" style="margin: 2px;">Kimberlyscastle@yahoo.com</span>
+                    </a>
+                </small>
             </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="text-white px-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="text-white px-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="text-white px-2" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="text-white pl-2" href="#"><i class="fab fa-youtube"></i></a>
-                </div>
+    
+            <!-- Right: Social -->
+            <div class="d-flex align-items-center flex-nowrap ms-3">
+                <a class="text-white px-1" href="https://www.facebook.com/share/17CeoU7fuY/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="text-white px-1" href="#"><i class="fab fa-instagram"></i></a>
             </div>
+    
+            </div>
+        </div>
         </div>
     </div>
     <!-- Topbar End -->
-
 
     <!-- Navbar Start -->
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
             <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>Kimberly</h1>
+                <h1 class="m-0 text-uppercase text-primary d-flex align-items-center">
+                    <img loading="lazy" decoding="async"  src="img/main/logo-kimberly.webp" alt="" style="width: 30px; height: 30px; margin-right: 2px;" class="me-2">
+                    Kimberly
+                </h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -67,20 +84,19 @@
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="course.html" class="nav-item nav-link">Programs</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Members</a>
                         <div class="dropdown-menu m-0">
                             <a href="team.html" class="dropdown-item">Our Teachers</a>
-                            <a href="testimonial.html" class="dropdown-item">Parents' Reviews</a>
+                            <!-- <a href="testimonial.html" class="dropdown-item">Parents' Reviews</a> -->
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="contact.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Enroll Now</a>
+                <a href="#" class="btn btn-primary py-2 px-4 d-none d-lg-block">Student Portal</a>
             </div>
         </nav>
     </div>
     <!-- Navbar End -->
-
 
     <!-- Header Start -->
     <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
@@ -96,24 +112,6 @@
                 </p>
             </div>
 
-            <div class="mx-auto mb-5" style="width: 100%; max-width: 700px;">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Quick Links</button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="about.html">About Kimberly</a>
-                            <a class="dropdown-item" href="course.html">Programs</a>
-                            <a class="dropdown-item" href="contact.html">Admissions</a>
-                        </div>
-                    </div>
-                    <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Search (e.g. admissions, uniforms, timetable)">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary px-4 px-lg-5">Search</button>
-                    </div>
-                </div>
-            </div>
-
             <a href="contact.html" class="btn btn-primary py-3 px-5 mr-2">Book a Visit</a>
             <a href="about.html" class="btn btn-outline-light py-3 px-5">Learn More</a>
         </div>
@@ -127,7 +125,7 @@
             <div class="row">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/main/IMG_5015.JPG" style="object-fit: cover;" alt="Kimberly Castle School Lagos">
+                        <img loading="eager" fetchpriority="high" decoding="async" class="position-absolute w-100 h-100" src="img/main/hero-home.webp" style="object-fit: cover;" alt="Kimberly Castle School Lagos">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -170,11 +168,6 @@
                                 <h6 class="text-uppercase text-white">Happy<span class="d-block">Learners</span></h6>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="mt-4">
-                        <a href="about.html" class="btn btn-primary py-2 px-4 mr-2">Our Story</a>
-                        <a href="contact.html" class="btn btn-outline-primary py-2 px-4">Admissions</a>
                     </div>
                 </div>
             </div>
@@ -248,7 +241,7 @@
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/main/IMG_4994.JPG" style="object-fit: cover;" alt="School classroom and learning">
+                        <img loading="lazy" decoding="async" class="position-absolute w-100 h-100" src="img/main/hero-learning.webp" style="object-fit: cover;" alt="School classroom and learning">
                     </div>
                 </div>
             </div>
@@ -270,7 +263,7 @@
         <div class="owl-carousel courses-carousel">
 
             <div class="courses-item position-relative">
-                <img class="img-fluid-2" src="img/main/IMG_4976.JPG" alt="Early Years">
+                <img loading="lazy" decoding="async" class="img-fluid-2" src="img/main/program-early-years.webp" alt="Early Years">
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Early Years (Nursery & Kindergarten)</h4>
                     <div class="border-top w-100 mt-3">
@@ -286,7 +279,7 @@
             </div>
 
             <div class="courses-item position-relative">
-                <img class="img-fluid-2" src="img/main/IMG_4980.JPG" alt="Lower Primary">
+                <img loading="lazy" decoding="async" class="img-fluid-2" src="img/main/program-lower-primary.webp" alt="Lower Primary">
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Lower Primary (Primary 1-3)</h4>
                     <div class="border-top w-100 mt-3">
@@ -302,7 +295,7 @@
             </div>
 
             <div class="courses-item position-relative">
-                <img class="img-fluid-2" src="img/courses-3.jpg" alt="Upper Primary">
+                <img loading="lazy" decoding="async"  class="img-fluid-2" src="img/course/course-photo-03.webp" alt="Upper Primary">
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Upper Primary (Primary 4-6)</h4>
                     <div class="border-top w-100 mt-3">
@@ -318,7 +311,7 @@
             </div>
 
             <div class="courses-item position-relative">
-                <img class="img-fluid-2" src="img/courses-4.jpg" alt="After School">
+                <img loading="lazy" decoding="async"  class="img-fluid-2" src="img/course/course-photo-04.webp" alt="After School">
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">After-School Club & Homework Support</h4>
                     <div class="border-top w-100 mt-3">
@@ -334,7 +327,7 @@
             </div>
 
             <div class="courses-item position-relative">
-                <img class="img-fluid-2" src="img/courses-5.jpg" alt="Creative Arts">
+                <img loading="lazy" decoding="async"  class="img-fluid-2" src="img/course/course-photo-05.webp" alt="Creative Arts">
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Creative Arts, Music & Drama</h4>
                     <div class="border-top w-100 mt-3">
@@ -350,7 +343,7 @@
             </div>
 
             <div class="courses-item position-relative">
-                <img class="img-fluid-2" src="img/courses-6.jpg" alt="Sports">
+                <img loading="lazy" decoding="async"  class="img-fluid-2" src="img/course/course-photo-06.webp" alt="Sports">
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Sports & Physical Development</h4>
                     <div class="border-top w-100 mt-3">
@@ -372,26 +365,27 @@
                 <div class="bg-white p-5 my-5">
                     <h1 class="text-center mb-2">Admissions Are Open</h1>
                     <p class="text-center mb-4">
-                        Request a campus tour or speak to our admissions team. We’ll guide you through requirements, fees, and resumption dates.
+                        Request a campus tour or speak to our admissions team. We'll guide you through requirements, fees, and resumption dates.
                     </p>
-                    <form>
+                    <!-- 2347081409911 -->
+                    <form id="admission-form" data-whatsapp="2347047651932" data-email="Kimberlyscastle@yahoo.com">
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Parent/Guardian Name" style="padding: 30px 20px;">
+                                    <input type="text" name="guardian_name" class="form-control bg-light border-0" placeholder="Parent/Guardian Name" style="padding: 30px 20px;" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="tel" class="form-control bg-light border-0" placeholder="Phone Number" style="padding: 30px 20px;">
+                                    <input type="tel" name="phone" class="form-control bg-light border-0" placeholder="Phone Number" style="padding: 30px 20px;" required>
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <select class="custom-select bg-light border-0 px-3" style="height: 60px;">
-                                        <option selected>Child’s Class</option>
+                                    <select name="child_class" class="custom-select bg-light border-0 px-3" style="height: 60px;" required>
+                                        <option value="" selected disabled>Child's Class</option>
                                         <option value="nursery">Nursery</option>
                                         <option value="kg">Kindergarten</option>
                                         <option value="p1">Primary 1</option>
@@ -408,8 +402,9 @@
                             </div>
                         </div>
                         <small class="d-block text-center text-muted mt-3">
-                            Visiting hours are available on school days. We’ll respond within 24–48 hours.
+                            Visiting hours are available on school days. We'll respond within 24-48 hours.
                         </small>
+                        <div id="admission-status" class="mt-3 text-success d-none text-center" role="status" aria-live="polite"></div>
                     </form>
                 </div>
             </div>
@@ -427,85 +422,68 @@
                     A supportive staff that teaches with patience, structure, and love—helping children build confidence every day.
                 </p>
             </div>
-            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
-                <div class="team-item">
-                    <img class="img-fluid-2-1 w-100" src="img/main/director.png" style="object-position: top;" alt="Director">
-                    <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Director</h5>
-                        <p class="mb-2">Administrator</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
+
+            <!-- <div class="d-flex justify-content-center align-items-stretch flex-wrap gap-4">
+                <div class="team-card">
+                  <img class="team-img" src="img/main/staff-director.webp" alt="Director">
+                  <div class="bg-light text-center p-4">
+                    <h5 class="mb-3">Director</h5>
+                    <p class="mb-2">Administrator</p>
+                    <div class="d-flex justify-content-center">
+                      <a class="mx-1 p-1" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
                     </div>
+                  </div>
                 </div>
-                <div class="team-item">
-                    <img class="img-fluid-2-1 w-100" src="img/team-1.jpg" alt="">
-                    <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Head Teacher</h5>
-                        <p class="mb-2">School Leadership & Curriculum</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
+              
+                <div class="team-card">
+                  <img class="team-img" src="img/main/staff-headmistress.webp" alt="Head Mistress">
+                  <div class="bg-light text-center p-4">
+                    <h5 class="mb-3">Head Mistress</h5>
+                    <p class="mb-2">School Leadership</p>
+                    <div class="d-flex justify-content-center">
+                      <a class="mx-1 p-1" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
                     </div>
+                  </div>
                 </div>
-                <div class="team-item">
-                    <img class="img-fluid-2-1 w-100" src="img/team-2.jpg" alt="">
-                    <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Primary Teacher</h5>
-                        <p class="mb-2">Literacy & Numeracy</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
+            </div> -->
+              
+
+            <div class="d-flex justify-content-center align-items-stretch flex-wrap gap-4">
+
+                <div class="team-card">
+                  <img class="team-img" src="img/main/director.png" alt="Director">
+                  <div class="bg-light text-center p-4">
+                    <h5 class="mb-3">Director</h5>
+                    <p class="mb-2">Administrator</p>
+                    <div class="d-flex justify-content-center">
+                      <a class="mx-1 p-1" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
                     </div>
+                  </div>
                 </div>
-                <div class="team-item">
-                    <img class="img-fluid-2-1 w-100" src="img/team-3.jpg" alt="">
-                    <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Creative Arts Teacher</h5>
-                        <p class="mb-2">Art, Music & Drama</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
+              
+                <div class="team-card">
+                  <img class="team-img" src="img/main/hmo.png" alt="Head Mistress">
+                  <div class="bg-light text-center p-4">
+                    <h5 class="mb-3">Head Mistress</h5>
+                    <p class="mb-2">School Leadership</p>
+                    <div class="d-flex justify-content-center">
+                      <a class="mx-1 p-1" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
                     </div>
+                  </div>
                 </div>
-                <div class="team-item">
-                    <img class="img-fluid-2-1 w-100" src="img/team-4.jpg" alt="">
-                    <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Sports Coach</h5>
-                        <p class="mb-2">Sports & Fitness</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="mx-1 p-1" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
+              
             </div>
+              
         </div>
     </div>
     <!-- Team End -->
 
-
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-image py-5" style="margin: 90px 0;">
+    <!-- <div class="container-fluid bg-image py-5" style="margin: 90px 0;">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-5 mb-lg-0">
@@ -527,7 +505,7 @@
                                 Kimberly feels like a family.”
                             </p>
                             <div class="d-flex flex-shrink-0 align-items-center mt-4">
-                                <img class="img-fluid-2 mr-4" src="img/testimonial-2.jpg" alt="">
+                                <img loading="lazy" decoding="async"  class="img-fluid-2 mr-4" src="img/testimonial-02.webp" alt="">
                                 <div>
                                     <h5>Parent</h5>
                                     <span>Primary 2</span>
@@ -541,7 +519,7 @@
                                 My son is more confident now.”
                             </p>
                             <div class="d-flex flex-shrink-0 align-items-center mt-4">
-                                <img class="img-fluid-2 mr-4" src="img/testimonial-1.jpg" alt="">
+                                <img loading="lazy" decoding="async"  class="img-fluid-2 mr-4" src="img/testimonial-01.webp" alt="">
                                 <div>
                                     <h5>Parent</h5>
                                     <span>Primary 5</span>
@@ -555,7 +533,7 @@
                                 Highly recommended.”
                             </p>
                             <div class="d-flex flex-shrink-0 align-items-center mt-4">
-                                <img class="img-fluid-2 mr-4" src="img/testimonial-2.jpg" alt="">
+                                <img loading="lazy" decoding="async"  class="img-fluid-2 mr-4" src="img/testimonial-02.webp" alt="">
                                 <div>
                                     <h5>Parent</h5>
                                     <span>Primary 1</span>
@@ -566,7 +544,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
     <!-- Contact Start -->
@@ -599,7 +577,7 @@
                             </div>
                             <div class="mt-n1">
                                 <h4>Email Us</h4>
-                                <p class="m-0">Kimberlyscastle@yahoo.com</p>
+                                <p class="m-0 text-break">Kimberlyscastle@yahoo.com</p>
                             </div>
                         </div>
                         <div class="mt-4">
@@ -650,19 +628,6 @@
                     </a>
                     <p class="m-0">Kimberly is a primary school in Lagos focused on strong literacy, numeracy, character building, and confident communication. From early years to primary classes, we help every child feel safe, seen, and supported.</p>
                 </div>
-                <!-- <div class="col-md-6 mb-5">
-                    <h3 class="text-white mb-4">Newsletter</h3>
-                    <p class="mb-3">Get updates about admissions, events, and school news.</p>
-                    <div class="w-100">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary px-4">Sign Up</button>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="d-block mt-2">We respect your privacy. No spam.</small>
-                </div> -->
             </div>
             <div class="row">
                 <div class="col-md-4 mb-5">
@@ -671,9 +636,7 @@
                     <p><i class="fa fa-phone-alt mr-2"></i>+2347081409911</p>
                     <p><i class="fa fa-envelope mr-2"></i>Kimberlyscastle@yahoo.com</p>
                     <div class="d-flex justify-content-start mt-4">
-                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
-                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
-                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
+                        <a class="text-white mr-4" href="https://www.facebook.com/share/17CeoU7fuY/" target="_blank"><i class="fab fa-2x fa-facebook-f"></i></a>
                         <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
                     </div>
                 </div>
@@ -717,16 +680,21 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="external/code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="external/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="external/code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="external/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" defer></script>
+    <script src="lib/easing/easing.min.js" defer></script>
+    <script src="lib/waypoints/waypoints.min.js" defer></script>
+    <script src="lib/counterup/counterup.min.js" defer></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/admission.js" defer></script>
 </body>
 
 </html>
+
+
+
+
+

@@ -176,7 +176,7 @@ a:hover{color:var(--kim-primary-dark);}
   
 .img-fluid-1 {
     max-width: 100%;
-    width: 300px;
+    width: 400px;
     height: 300px; 
     object-fit: cover;
     /* object-position: top; */
@@ -189,3 +189,20 @@ a:hover{color:var(--kim-primary-dark);}
     object-fit: cover;
     /* object-position: top; */
 }
+
+.team-card{
+    width: 400px;              /* consistent card width */
+    border-radius: 10px;
+    overflow: hidden;          /* clips image nicely */
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .team-img{
+    width: 100%;
+    height: 400px;             /* consistent image height */
+    object-fit: cover;
+    object-position: top;
+    display: block;
+  }
+  
