@@ -137,19 +137,23 @@ a:hover{color:var(--kim-primary-dark);}
     font-size: 18px;
     line-height: 1.8;
     font-weight: 600;
-    color: #fff;
+    color: #0F172A;
 }
 
 .home-hero .home-hero-text strong{
-    color: var(--kim-secondary);
+    color: #0F172A;
 }
 
-.home-hero .btn-primary{
-    color: #fff !important;
-}
+/* .home-hero .btn-primary{
+    color: #0F172A !important;
+} */
 
 .home-hero .btn-outline-light{
-    color: #fff !important;
+    color: #0F172A !important;
+}
+
+.home-hero h1{
+    color: #0F172A !important;
 }
   
 
