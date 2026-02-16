@@ -7,7 +7,7 @@ window.coursesData = {
       description: "Play-based learning that builds language, confidence, and early thinking skills.",
       type: "Subject",
       items: [
-        { id: "nursery-numeracy", title: "Numeracy", detail: "Counting, comparing, and recognizing simple number patterns." },
+        { id: "nursery-numeracy", title: "Numeracy", detail: "Counting, comparing, and recognizing simple number patterns.", image: "course-gallery-005.webp" },
         { id: "nursery-literacy", title: "Literacy", detail: "Letter sounds, sight words, and early reading habits." },
         { id: "nursery-rhymes", title: "Rhymes", detail: "Songs and rhythm to boost memory, listening, and phonics." },
         { id: "nursery-know-your-world", title: "Know Your World (K.W.Y)", detail: "Exploring nature, people, and everyday science." },
@@ -48,16 +48,16 @@ window.coursesData = {
     },
     {
       id: "primary",
-      title: "Primary Department (P1-P6)",
-      description: "A structured six-year path that moves learners from basics to upper primary mastery.",
+      title: "Elementary (Lower and Upper)",
+      description: "A structured six-year path that moves learners from basics to Year 1 to Year 6 mastery.",
       type: "Class",
       items: [
-        { id: "primary-p1", title: "Primary 1 (P1)", detail: "Reading basics, counting, handwriting, and classroom routines." },
-        { id: "primary-p2", title: "Primary 2 (P2)", detail: "Stronger reading fluency, simple writing, and number operations." },
-        { id: "primary-p3", title: "Primary 3 (P3)", detail: "Comprehension focus, multiplication intro, and creative writing." },
-        { id: "primary-p4", title: "Primary 4 (P4)", detail: "Expanded grammar, multi-step math, and science exploration." },
-        { id: "primary-p5", title: "Primary 5 (P5)", detail: "Critical thinking, essay writing, and applied problem solving." },
-        { id: "primary-p6", title: "Primary 6 (P6)", detail: "Exam readiness, leadership skills, and transition preparation." }
+        { id: "primary-p1", title: "Year 1", detail: "Reading basics, counting, handwriting, and classroom routines." },
+        { id: "primary-p2", title: "Year 2", detail: "Stronger reading fluency, simple writing, and number operations." },
+        { id: "primary-p3", title: "Year 3", detail: "Comprehension focus, multiplication intro, and creative writing." },
+        { id: "primary-p4", title: "Year 4", detail: "Expanded grammar, multi-step math, and science exploration." },
+        { id: "primary-p5", title: "Year 5", detail: "Critical thinking, essay writing, and applied problem solving." },
+        { id: "primary-p6", title: "Year 6", detail: "Exam readiness, leadership skills, and transition preparation." }
       ]
     }
   ]

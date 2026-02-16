@@ -47,7 +47,7 @@
 
         const prettyClass = childClass.toUpperCase() === "KG"
             ? "Kindergarten"
-            : childClass.toUpperCase().replace("P", "Primary ");
+            : childClass.toUpperCase().replace("P", "Year ");
 
         const body = [
             "Hello Kimberly Castle School Admissions Team,",

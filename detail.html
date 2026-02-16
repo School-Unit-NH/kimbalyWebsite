@@ -94,7 +94,7 @@
                     <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="#" class="btn btn-primary py-2 px-4 d-none d-lg-block">Student Portal</a>
+                <a href="#" class="btn btn-primary py-2 px-4 d-none d-lg-block">Result Portal</a>
             </div>
         </nav>
     </div>
@@ -296,7 +296,7 @@
             <div class="row">
                 <div class="col-md-6 mb-5">
                     <a href="index.html" class="navbar-brand">
-                        <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>Kimberly</h1>
+                        <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>Kimberly's Castle</h1>
                     </a>
                     <p class="m-0">Kimberly is a primary school in Lagos focused on strong literacy, numeracy, character building, and confident communication. From early years to primary classes, we help every child feel safe, seen, and supported.</p>
                 </div>
@@ -308,7 +308,7 @@
                     <p><i class="fa fa-phone-alt mr-2"></i>+2347081409911</p>
                     <p><i class="fa fa-envelope mr-2"></i>Kimberlyscastle@yahoo.com</p>
                     <div class="d-flex justify-content-start mt-4">
-                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
+                        <a class="text-white mr-4" href="https://www.facebook.com/share/17CeoU7fuY/" target="_blank"><i class="fab fa-2x fa-facebook-f"></i></a>
                         <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
                     </div>
                 </div>
@@ -317,7 +317,7 @@
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-white-50 mb-2" href="course.html#nursery"><i class="fa fa-angle-right mr-2"></i>Nursery Department</a>
                         <a class="text-white-50 mb-2" href="course.html#elementary"><i class="fa fa-angle-right mr-2"></i>Elementary Department</a>
-                        <a class="text-white-50" href="course.html#primary"><i class="fa fa-angle-right mr-2"></i>Primary Department (P1-P6)</a>
+                        <a class="text-white-50" href="course.html#primary"><i class="fa fa-angle-right mr-2"></i>Elementary (Lower and Upper)</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
@@ -338,14 +338,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">Kimberly Castle School</a>. All Rights Reserved.</p>
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">Kimberly's Castle School</a>. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
-
-
 
 
     <!-- Back to Top -->
@@ -427,7 +425,7 @@
 
             const featureBox = document.querySelector(".bg-primary");
             if (featureBox) {
-                const level = dept.id === "nursery" ? "Early Years" : (dept.id === "elementary" ? "Foundation" : "Upper Primary");
+                const level = dept.id === "nursery" ? "Early Years" : (dept.id === "elementary" ? "Foundation" : "Upper Elementary");
                 const duration = dept.id === "primary" ? "Full Academic Year" : "Termly Focus";
                 const language = dept.id === "nursery" ? "English (with local support)" : "English";
                 const classSize = dept.id === "nursery" ? "Small groups" : "Moderate groups";
@@ -474,7 +472,7 @@
                             <h4 class="text-center text-white px-3">${item.title}</h4>
                             <div class="border-top w-100 mt-3">
                                 <div class="d-flex justify-content-between p-4">
-                                    <span class="text-white"><i class="fa fa-book mr-2"></i>${dept.type}</span>
+                                    
                                     <span class="text-white"><i class="fa fa-info-circle mr-2"></i>${item.detail}</span>
                                 </div>
                             </div>
@@ -482,6 +480,7 @@
                     </a>
                 `).join("");
             }
+            // <span class="text-white"><i class="fa fa-book mr-2"></i>${dept.type}</span>
 
             const categories = document.querySelector(".list-group");
             if (categories) {

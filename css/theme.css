@@ -484,11 +484,56 @@ textarea.form-control{
   border-radius: var(--kim-radius-md);
 }
 
+/* Keep teacher cards visually uniform even when names/roles differ in length */
+.team-item{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  /* border-radius: var(--kim-radius-md); */
+}
+
+.team-item > img{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.team-item .bg-light{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* min-height: 165px; */
+}
+
+.team-item h5,
+.team-item p{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.team-item h5{
+  /* min-height: 48px; */
+  -webkit-line-clamp: 2;
+}
+
+.team-item p{
+  /* min-height: 44px; */
+  -webkit-line-clamp: 2;
+}
+
 .jumbotron,
 .jumbotron.page-header{
   border-bottom-left-radius: var(--kim-radius-lg);
   border-bottom-right-radius: var(--kim-radius-lg);
   overflow: hidden;
 }
-  
+
+.inner-rounded-none{
+    border-radius: 0%;
+}
+
 .text-primary-1{color:var(--kim-accent-rgb)!important;}
