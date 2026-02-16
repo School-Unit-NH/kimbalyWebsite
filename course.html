@@ -160,8 +160,8 @@
                     <h3 class="text-white mb-4">Programs</h3>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-white-50 mb-2" href="course.html#nursery"><i class="fa fa-angle-right mr-2"></i>Nursery Department</a>
-                        <a class="text-white-50 mb-2" href="course.html#elementary"><i class="fa fa-angle-right mr-2"></i>Elementary Department</a>
-                        <a class="text-white-50" href="course.html#primary"><i class="fa fa-angle-right mr-2"></i>Elementary (Lower and Upper)</a>
+                        <a class="text-white-50 mb-2" href="course.html#elementary"><i class="fa fa-angle-right mr-2"></i>Elementary Lower (Year 1-3)</a>
+                        <a class="text-white-50" href="course.html#primary"><i class="fa fa-angle-right mr-2"></i>Elementary Upper (Year 4-6)</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
@@ -355,7 +355,7 @@
       
               dept.items.forEach(item => {
                 const fallbackImg = imagePool[imgIndex % imagePool.length];
-                const img = `${imageDir}${item.image || fallbackImg}`;   // âœ… use item.image first
+                const img = `${imageDir}${item.image || fallbackImg}`;   // use item.image first
                 imgIndex += 1;
       
                 html += makeCard(item, tag, img);
