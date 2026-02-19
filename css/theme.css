@@ -207,6 +207,14 @@ a:hover{color:var(--kim-primary-dark);}
     /* object-position: top; */
 }
 
+.img-fluid-3 {
+    /* max-width: 100%; */
+    width: 90px;
+    height: 90px; 
+    object-fit: cover;
+    /* object-position: top; */
+}
+
 .img-fluid-2 {
     max-width: 100%;
     width: 300px;

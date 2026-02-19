@@ -7,19 +7,19 @@ window.coursesData = {
       description: "Play-based learning that builds language, confidence, and early thinking skills.",
       type: "Subject",
       items: [
-        { id: "nursery-numeracy", title: "Numeracy", detail: "Counting, comparing, and recognizing simple number patterns.", image: "course-gallery-005.webp" },
-        { id: "nursery-literacy", title: "Literacy", detail: "Letter sounds, sight words, and early reading habits." },
-        { id: "nursery-rhymes", title: "Rhymes", detail: "Songs and rhythm to boost memory, listening, and phonics." },
-        { id: "nursery-know-your-world", title: "Know Your World (K.W.Y)", detail: "Exploring nature, people, and everyday science." },
-        { id: "nursery-psed", title: "Physical, Social and Environmental Development (P.S.E.D)", detail: "Gross motor play, teamwork, and healthy routines." },
-        { id: "nursery-diction", title: "Diction", detail: "Clear speech, correct sounds, and confident speaking." },
-        { id: "nursery-handwriting", title: "Hand Writing", detail: "Pencil grip, strokes, and neat letter formation." },
-        { id: "nursery-reader", title: "Reader", detail: "Guided stories to build vocabulary and comprehension." },
-        { id: "nursery-creative-art", title: "Creative Art", detail: "Drawing, coloring, crafts, and creative expression." },
-        { id: "nursery-shapes-colors", title: "Shapes and Colors", detail: "Identifying shapes, colors, and visual patterns." },
-        { id: "nursery-french", title: "French", detail: "Simple greetings, numbers, and everyday words." },
-        { id: "nursery-verbal-reasoning", title: "Verbal Reasoning", detail: "Listening tasks, word links, and simple logic." },
-        { id: "nursery-quantitative-reasoning", title: "Quantitative Reasoning", detail: "Problem solving with numbers and shapes." }
+        { id: "nursery-numeracy", title: "Numeracy", detail: "Counting, comparing, and recognizing simple number patterns.", image: "course-gallery-032.webp" },
+        { id: "nursery-literacy", title: "Literacy", detail: "Letter sounds, sight words, and early reading habits.", image: "course-gallery-033.webp" },
+        { id: "nursery-rhymes", title: "Rhymes", detail: "Songs and rhythm to boost memory, listening, and phonics.", image: "course-gallery-084.webp" },
+        { id: "nursery-know-your-world", title: "Know Your World (K.W.Y)", detail: "Exploring nature, people, and everyday science.", image: "course-gallery-082.webp" },
+        { id: "nursery-psed", title: "Physical, Social and Environmental Development (P.S.E.D)", detail: "Gross motor play, teamwork, and healthy routines.", image: "course-gallery-042.webp" },
+        { id: "nursery-diction", title: "Diction", detail: "Clear speech, correct sounds, and confident speaking.", image: "course-gallery-005.webp" },
+        { id: "nursery-handwriting", title: "Hand Writing", detail: "Pencil grip, strokes, and neat letter formation.", image: "course-gallery-005.webp" },
+        { id: "nursery-reader", title: "Reader", detail: "Guided stories to build vocabulary and comprehension.", image: "course-gallery-005.webp" },
+        { id: "nursery-creative-art", title: "Creative Art", detail: "Drawing, coloring, crafts, and creative expression.", image: "course-gallery-005.webp" },
+        { id: "nursery-shapes-colors", title: "Shapes and Colors", detail: "Identifying shapes, colors, and visual patterns.", image: "course-gallery-005.webp" },
+        { id: "nursery-french", title: "French", detail: "Simple greetings, numbers, and everyday words.", image: "course-gallery-005.webp" },
+        { id: "nursery-verbal-reasoning", title: "Verbal Reasoning", detail: "Listening tasks, word links, and simple logic.", image: "course-gallery-005.webp" },
+        { id: "nursery-quantitative-reasoning", title: "Quantitative Reasoning", detail: "Problem solving with numbers and shapes.", image: "course-gallery-005.webp" }
       ]
     },
     {
