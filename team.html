@@ -213,7 +213,7 @@
                 const role = escapeHtml(member.role || "Teacher");
                 const courses = escapeHtml(member.courses || "");
                 const subtitle = courses ? `${role} | ${courses}` : role;
-                const image = `img/${escapeHtml(member.image || "team-01.webp")}`;
+                const image = `img/teachers/${escapeHtml(member.image || "team-01.webp")}`;
 
                 return `
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
