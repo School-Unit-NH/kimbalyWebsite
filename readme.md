@@ -14,3 +14,6 @@ whatsapp, email
 
 
 enroll now -> result
+
+
+not responsive on sub 271 size

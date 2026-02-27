@@ -148,8 +148,7 @@
                     <h3 class="text-white mb-4">Programs</h3>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-white-50 mb-2" href="course.html#nursery"><i class="fa fa-angle-right mr-2"></i>Nursery Department</a>
-                        <a class="text-white-50 mb-2" href="course.html#elementary"><i class="fa fa-angle-right mr-2"></i>Elementary Lower (Year 1-3)</a>
-                        <a class="text-white-50" href="course.html#primary"><i class="fa fa-angle-right mr-2"></i>Elementary Upper (Year 4-6)</a>
+                        <a class="text-white-50 mb-2" href="course.html#elementary"><i class="fa fa-angle-right mr-2"></i>Elementary Lower (Year 1-6)</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
@@ -194,6 +193,7 @@
         (function () {
             const container = document.getElementById("team-container");
             const members = (window.teamData && Array.isArray(window.teamData.members)) ? window.teamData.members : [];
+            const imagestyled = ['teacher-4']; 
 
             if (!container || !members.length) {
                 return;
@@ -214,11 +214,12 @@
                 const courses = escapeHtml(member.courses || "");
                 const subtitle = courses ? `${role} | ${courses}` : role;
                 const image = `img/teachers/${escapeHtml(member.image || "team-01.webp")}`;
+                const cstyle = imagestyled.includes(member.id) ? ' style="object-position: top;"' : ''
 
                 return `
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <article class="gallery-card h-100">
-                        <img loading="lazy" decoding="async" class="gallery-image" src="${image}" alt="${name}">
+                        <img loading="lazy" decoding="async" class="gallery-image" src="${image}" alt="${name}"${cstyle}>
                         <div class="gallery-card-body">
                             <h6 class="gallery-title mb-0">${name}</h6>
                             <small class="text-muted">${subtitle}</small>
@@ -226,18 +227,6 @@
                     </article>
                 </div>
                 `
-                
-                // `
-                //     <div class="col-lg-3 col-md-6 mb-4">
-                //         <div class="team-item h-60">
-                //             <img loading="lazy" decoding="async" class="img-fluid w-100" src="${image}" alt="${name}">
-                //             <div class="inner-rounded-none bg-light text-center p-4">
-                //                 <h5 class="mb">${name}</h5>
-                //                 <p class="mb-2">${subtitle}</p>
-                //             </div>
-                //         </div>
-                //     </div>
-                // `;
             }
 
             container.innerHTML = members.map(makeCard).join("");
