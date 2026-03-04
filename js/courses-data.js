@@ -7,9 +7,9 @@ window.coursesData = {
       description: "Play-based learning that builds language, confidence, and early thinking skills.",
       type: "Subject",
       items: [
-        { id: "nursery-numeracy", title: "Numeracy", detail: "Counting, comparing, and recognizing simple number patterns.", image: "course-gallery-032.webp" },
+        { id: "nursery-numeracy", title: "Numeracy", detail: "Counting, comparing, and recognizing simple number patterns.", image: "course-gallery-026.webp" },
         { id: "nursery-literacy", title: "Literacy", detail: "Letter sounds, sight words, and early reading habits.", image: "liked/literacy.webp" },
-        { id: "nursery-rhymes", title: "Rhymes", detail: "Songs and rhythm to boost memory, listening, and phonics.", image: "course-gallery-005.webp" },
+        { id: "nursery-rhymes", title: "Rhymes", detail: "Songs and rhythm to boost memory, listening, and phonics.", image: "course-gallery-043.webp" },
         { id: "nursery-know-your-world", title: "Know Your World (K.W.Y)", detail: "Exploring nature, people, and everyday science.", image: "liked/IMG_5672.JPG" },
         { id: "nursery-psed", title: "Physical, Social and Environmental Development (P.S.E.D)", detail: "Gross motor play, teamwork, and healthy routines.", image: "course-gallery-042.webp" },
         { id: "nursery-diction", title: "Diction", detail: "Clear speech, correct sounds, and confident speaking.", image: "liked/IMG_5672.JPG" },
