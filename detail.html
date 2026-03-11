@@ -93,8 +93,9 @@
                     </div>
                     <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="https://results.kimberlyscastle.com.ng/" class="btn btn-primary py-2 px-4 mt-3 d-lg-none nav-item nav-link">Result Portal</a>
                 </div>
-                <a href="#" class="btn btn-primary py-2 px-4 d-none d-lg-block">Result Portal</a>
+                <a href="https://results.kimberlyscastle.com.ng/" class="btn btn-primary py-2 px-4 d-none d-lg-block">Result Portal</a>
             </div>
         </nav>
     </div>
@@ -369,6 +370,7 @@
                 "img/course/course-photo-05.webp",
                 "img/course/course-photo-06.webp"
             ];
+            const imageDir = "img/course/";
 
             function flattenCourses() {
                 const all = [];
@@ -392,6 +394,11 @@
                 return text.replace(/\b\w/g, c => c.toUpperCase());
             }
 
+            function resolveCourseImage(item, fallbackIndex) {
+                if (item && item.image) return `${imageDir}${item.image}`;
+                return imagePool[(fallbackIndex >= 0 ? fallbackIndex : 0) % imagePool.length];
+            }
+
             const params = new URLSearchParams(window.location.search);
             const courseId = params.get("course");
             const selected = getCourseById(courseId);
@@ -399,7 +406,7 @@
             const dept = selected.department;
             const allCourses = flattenCourses();
             const courseIndex = allCourses.findIndex(c => c.item.id === course.id);
-            const imageSrc = imagePool[(courseIndex >= 0 ? courseIndex : 0) % imagePool.length];
+            const imageSrc = resolveCourseImage(course, courseIndex);
 
             document.title = `${course.title} - Kimberly`;
 
@@ -466,7 +473,7 @@
                 const relatedItems = dept.items.filter(i => i.id !== course.id).slice(0, 6);
                 related.innerHTML = relatedItems.map((item, i) => `
                     <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="detail.html?course=${item.id}">
-                        <img loading="lazy" decoding="async"  class="img-fluid" src="${imagePool[i % imagePool.length]}" alt="">
+                        <img loading="lazy" decoding="async"  class="img-fluid" src="${resolveCourseImage(item, i)}" alt="">
                         <div class="courses-text">
                             <h4 class="text-center text-white px-3">${item.title}</h4>
                             <div class="border-top w-100 mt-3">
@@ -499,7 +506,7 @@
                     <h2 class="mb-4">Recent Courses</h2>
                     ${recentItems.map((c, i) => `
                         <a class="d-flex align-items-center text-decoration-none mb-4" href="detail.html?course=${c.item.id}">
-                            <img loading="lazy" decoding="async"  class="img-fluid-3 rounded" src="img/course-thumb.webp" alt="">
+                            <img loading="lazy" decoding="async"  class="img-fluid-3 rounded" src="${resolveCourseImage(c.item, i)}" alt="">
                             <div class="pl-3">
                                 <h6>${c.item.title}</h6>
                                 <div class="d-flex">
