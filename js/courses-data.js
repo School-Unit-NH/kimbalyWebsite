@@ -16,7 +16,7 @@ window.coursesData = {
         { id: "nursery-handwriting", title: "Hand Writing", detail: "Pencil grip, strokes, and neat letter formation.", image: "course-gallery-023.webp" },
         { id: "nursery-reader", title: "Reader", detail: "Guided stories to build vocabulary and comprehension.", image: "liked/IMG_5684.JPG" },
         { id: "nursery-creative-art", title: "Creative Art", detail: "Drawing, coloring, crafts, and creative expression.", image: "liked/5.png"},//"course-gallery-005.webp" },
-        { id: "nursery-shapes-colors", title: "Shapes and Colors", detail: "Identifying shapes, colors, and visual patterns.", image: "liked/vb.jpeg" },
+        { id: "nursery-shapes-colors", title: "Shapes and Colors", detail: "Identifying shapes, colors, and visual patterns.", image: "liked/colors.png" },
         { id: "nursery-french", title: "French", detail: "Simple greetings, numbers, and everyday words.", image: "course-gallery-028.webp" },
         { id: "nursery-verbal-reasoning", title: "Verbal Reasoning", detail: "Listening tasks, word links, and simple logic.", image: "liked/vb.jpeg" },
         { id: "nursery-quantitative-reasoning", title: "Quantitative Reasoning", detail: "Problem solving with numbers and shapes.", image: "course-gallery-005.webp" }
