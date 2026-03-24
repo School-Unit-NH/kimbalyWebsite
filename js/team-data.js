@@ -9,7 +9,7 @@ window.teamData = {
         "image":  "IMG_5698.webp"
     },
     {
-        "id":  "teacher-1",
+        "id":  "teacher-2",
         "name":  "Ibrahim",
         "role":  "Grade 3",
         "courses":  "Primary school subject",
@@ -27,7 +27,7 @@ window.teamData = {
         "name":  "Anthony Success",
         "role":  "Assistant teacher nur 1",
         "courses":  "Assistant teacher",
-        "image":  "IMG_5701.PNG"
+        "image":  "IMG_5701.webp"
     },
     {
         "id":  "teacher-5",
@@ -136,3 +136,5 @@ window.teamData = {
     },
 ]
 };
+
+
